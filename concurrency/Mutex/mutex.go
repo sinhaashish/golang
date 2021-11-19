@@ -26,7 +26,6 @@ func incrementor(s string) {
 		mutex.Lock()
 		x := counter
 		x++
-
 		counter = x
 		fmt.Println(s, i, " Counter ", counter)
 		mutex.Unlock()
