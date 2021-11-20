@@ -8,8 +8,7 @@ type person struct {
 	favIceCream []string
 }
 
-
-var m map[string]Vertex
+var m map[string]person
 
 func main() {
 
@@ -24,11 +23,18 @@ func main() {
 		favIceCream: []string{"ice1", "cream1"},
 	}
 
-	m = make([string]person)
+	m = make(map[string]person)
 
-	m[p.lastName]= p
-	m[p1.lastName]= p1
+	m[p.lastName] = p
+	m[p1.lastName] = p1
 
-	for range k, v := 
+	for _, v := range m {
+		fmt.Println(v.firstName)
+		fmt.Println(v.firstName)
+		for i, val := range v.favIceCream {
+			fmt.Println(i, val)
+		}
+		fmt.Println("-------")
+	}
 
 }
