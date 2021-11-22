@@ -12,5 +12,6 @@ func main() {
 	fmt.Println(v, ok)
 	close(ch)
 	v, ok = <-ch
+	fmt.Println("ashish")
 	fmt.Println(v, ok)
 }
