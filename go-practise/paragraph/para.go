@@ -44,7 +44,7 @@ func main() {
 		if ok {
 			continue
 		} else {
-			fmt.Println("\n Answer \t ", key, "\t count \t ", m[key])
+			fmt.Println("\n Answer : \t ", key, "\t count : \t ", m[key])
 			break
 		}
 	}
