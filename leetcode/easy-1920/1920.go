@@ -16,7 +16,7 @@ package main
 import "fmt"
 
 func main() {
-	a := []int{1, 2, 4}
+	a := []int{0, 2, 1, 5, 3, 4}
 	fmt.Println(buildArray(a))
 
 }
@@ -24,6 +24,7 @@ func main() {
 func buildArray(nums []int) []int {
 	var result []int
 	for i := range nums {
+
 		result = append(result, nums[nums[i]])
 	}
 	return result
