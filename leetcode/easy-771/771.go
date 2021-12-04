@@ -45,13 +45,11 @@ func numJewelsInStones1(J string, S string) int {
 	for _, r := range J {
 		cache[r] = true
 	}
-
 	result := 0
 	for _, r := range S {
 		if _, ok := cache[r]; ok {
 			result++
 		}
 	}
-
 	return result
 }
